@@ -11,13 +11,32 @@
 
 <body>
   <header class="header">
-    <div class="title">
-      <h1>Picture This!</h1>
+    <div class="Container">
+        <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
+    </header>  
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+      <img src="images/museum (1).jpg" alt="museum" class="Container">
+   <picture>
+  <source srcset="images/museum(1)-320_x_180.jpg,
+   images/museum(1)-640_x_960.jpg 2x,
+   images/museum(1)-960_x_540.jpg 3x,
+   media=(max-width: 960px)">
 
-  </header>
+   <source srcset="images/museum(1)-2880_x_2880.jpg,
+   images/museum(1)-1920_x_1920.jpg 2x,
+   images/museum(1)-960_x_960.jpg 3x,
+   media=(min-width: 960px)">
+
+   <source srcset="images/museum(1)-320_x_320.jpg,
+   images/museum(1)-640_x_640.jpg 2x,
+   images/museum(1)-1280_x_1280.jpg 3x,
+   media=(max-width: 320px)">
+
+   <source srcset="images/museum(1)-960_x_960.jpg,
+   images/museum(1)-1920_x_1920.jpg 2x,
+   images/museum(1)-2880_x_2880.jpg 3x,
+   media=(min-width: 2880px)">
+</picture>
 </body>
-
-</html>
+    </html>
